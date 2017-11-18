@@ -14,37 +14,37 @@
 <ul id="aright">
    <li>
        <input type="checkbox">
-       <a href="show.html">AP Physics Homework</a><br>
+       <a href="1"><%= @todo_description[0] %></a><br>
        <span class="TodoItemTime">
-           1 hour
+           <%= @todo_minutes_estimate[0] %> minutes
        </span>
     </li> 
     <li>
         <input type="checkbox">
-        <a href="show.html">English Homework</a><br>
+        <a href="2"><%= @todo_description[1] %></a><br>
         <span class="TodoItemTime">
-           45 minutes
+           <%= @todo_minutes_estimate[1] %> minutes
        </span>
     </li>
     <li>
         <input type="checkbox">
-        <a href="show.html">Study for Math Test</a><br>
+        <a href="3"><%= @todo_description[2] %></a><br>
          <span class="TodoItemTime">
-           30 minutes
+           <%= @todo_minutes_estimate[2] %> minutes
          </span>
     </li>
     <li>
         <input type="checkbox">
-        <a href="Show.html">Laundry</a><br>
+        <a href="4"><%= @todo_description[3] %></a><br>
         <span class="TodoItemTime">
-           50 minutes
+           <%= @todo_minutes_estimate[3] %> minutes
        </span>
     </li>    
     <li>
         <input type="checkbox">
-        <a href="Show.html">Going to Hawaii</a><br>
+        <a href="5"><%= @todo_description[4] %></a><br>
         <span class="TodoItemTime">
-           1 month 3 days left
+           <%= @todo_minutes_estimate[4] %> minutes
        </span>
     </li>
 </ul>
@@ -60,8 +60,10 @@
 </th>
 </tr>
 </table>
-<div class="centertext"><input type="text" >
-<input type="number">
+<div class="centertext" id="new-Todo">
+<input class="text-input" id="Todoinputtext" placeholder="To Do Item..." type="text">
+<input class="text-input" id="Todoinputtime" placeholder="Time in minutes" type="number">
+<input class="button" id="Todoinputbutton" value="Add To Do" type="submit">
 </div></div>
 </body>
 </html>
