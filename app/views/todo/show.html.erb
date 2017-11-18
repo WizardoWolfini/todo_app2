@@ -3,6 +3,8 @@
     <body background="http://www.planwallpaper.com/static/images/518169-backgrounds.jpg">
         <div class="container">
         <h3>Todo #<%= params[:id] %></h3>
+        <p><%= @todo_description[@todo_index-1] %></p>
+        <p><%= @todo_minutes_estimate[@todo_index-1] %> minutes</p>
         <a href="index.html" id="Edit">Edit</a><br>
         <a href="index.html" id="Delete">Delete</a><br>
         <a href="index.html" id="GoBack">Go Back</a>
