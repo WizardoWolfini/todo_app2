@@ -13,3 +13,83 @@
  *= require_tree .
  *= require_self
  */
+html{
+    font-family: sans-serif;
+}
+.bodystuff{
+    margin:auto;
+    margin-bottom:10px;
+    background-color:white;
+    padding:30px;
+    width:70%;
+    border:3px solid black;
+}
+.container {
+    color:#444;
+    margin:auto;
+    width:80%;
+    background-color:white;
+    padding:10px;
+}
+.TodoItemTime {
+    font-weight:bold;
+    font-size:12px;
+    border-radius:60px;
+    padding: 3px;
+    background-color: #f0b0f0;
+}
+li{
+    padding:5px;
+    margin-bottom:10px;
+    background-color:lightblue;
+    border:2px solid blue;
+    width:200px;
+    
+}
+#title{
+    width:20%;
+    margin:auto;
+    margin-bottom: 30px;
+    font-size:50px;
+    color:black;
+    text-align: center;
+    border-radius:5px;
+    background-color:white;
+    box-shadow:10px 10px 10px #444444;
+
+}
+ul{
+    list-style:none; 
+    padding:5px;
+    margin:10px;
+    background-color:#a1a1a1;
+}
+.resize{
+    width:230px;
+    height:300px;
+}
+.centertext{
+    margin:auto;
+    width:50%;
+}
+#aright{
+    text-align:left;
+}
+.whitebackground{
+    background-color:white;
+    border-radius:10px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    vertical-align: top;
+}
+#Edit:hover{
+    background-color:blue;
+}
+#Delete:hover{
+    background-color:red;
+}
+#GoBack:hover{
+    background-color:green;
+}
