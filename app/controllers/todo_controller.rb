@@ -3,6 +3,11 @@ class TodoController<ApplicationController
         #@todo_description = ["AP Physics Homework","English Homework","Make the curriculum","Laundry","Going to Hawaii"]
         #@todo_minutes_estimate = ["60","45","60","50","10080"]
     end              
+    def new
+        
+        
+        
+    end
     def show
         #@todo_description = ["AP Physics Homework","English Homework","Make the curriculum","Laundry","Going to Hawaii"]
         #@todo_minutes_estimate = ["60","45","60","50","10080"]
