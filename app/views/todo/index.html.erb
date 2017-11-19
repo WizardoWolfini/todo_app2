@@ -12,41 +12,16 @@
     Todo List
     </h1>
 <ul id="aright">
+   <% @todos.each do |todo| %>
    <li>
        <input type="checkbox">
-       <a href="show/1"><%= @todo_description[0] %></a><br>
+       <a href="/todo/show/<%= todo.id%>"><%= todo.description %></a><br>
        <span class="TodoItemTime">
-           <%= @todo_minutes_estimate[0] %> minutes
+           <%= todo.pomodoro_estimate %> pomodoros
        </span>
-    </li> 
-    <li>
-        <input type="checkbox">
-        <a href="show/2"><%= @todo_description[1] %></a><br>
-        <span class="TodoItemTime">
-           <%= @todo_minutes_estimate[1] %> minutes
-       </span>
+       <br><a id="fontresize" href="/todo/delete/<%= todo.id %>">Delete to Do</a>
     </li>
-    <li>
-        <input type="checkbox">
-        <a href="show/3"><%= @todo_description[2] %></a><br>
-         <span class="TodoItemTime">
-           <%= @todo_minutes_estimate[2] %> minutes
-         </span>
-    </li>
-    <li>
-        <input type="checkbox">
-        <a href="show/4"><%= @todo_description[3] %></a><br>
-        <span class="TodoItemTime">
-           <%= @todo_minutes_estimate[3] %> minutes
-       </span>
-    </li>    
-    <li>
-        <input type="checkbox">
-        <a href="show/5"><%= @todo_description[4] %></a><br>
-        <span class="TodoItemTime">
-           <%= @todo_minutes_estimate[4] %> minutes
-       </span>
-    </li>
+    <% end %>
 </ul>
 </th>
 <th>
@@ -60,10 +35,11 @@
 </th>
 </tr>
 </table>
+<form action="/todo/create">
 <div class="centertext" id="new-Todo">
-<input class="text-input" id="Todoinputtext" placeholder="To Do Item..." type="text">
-<input class="text-input" id="Todoinputtime" placeholder="Time in minutes" type="number">
+<input class="text-input" id="Todoinputtext" name="description" placeholder="To Do Item..." type="text">
+<input class="text-input" id="Todoinputtime" name="pomodoro_estimate" placeholder="Time in pomodoros" type="number">
 <input class="button" id="Todoinputbutton" value="Add To Do" type="submit">
-</div></div>
+</div></form></div>
 </body>
 </html>

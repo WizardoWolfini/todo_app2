@@ -24,6 +24,12 @@ html{
     width:70%;
     border:3px solid black;
 }
+#fontresize{
+    font-size: 15px;
+    
+    
+    
+}
 .container {
     color:#444;
     margin:auto;
